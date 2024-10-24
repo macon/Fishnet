@@ -4,21 +4,32 @@
 
 ---
 
-A collection of _functional style_ types for C#, including:
+### A collection of _functional style_ types for C#, including:
 
 ### Option
+
+`Opt<T>`
+
 Models an instance of a type that may or may not be present.
 
 ### Discriminated Union
+`One<T, ..Tn>`
+
 A type that can only be one of a named set.
 
 ### Result
+`Res<T> / Res<T, E>`
+
 Better validation handling.
 
 ### Try/Exc
+`Try<T> / Exc<T>`
+
 Better error handling.
 
-Below are some basic examples but use the links to see more details.
+---
+
+Below are some basic examples and links to further info.
 
 ## [Opt\<T\>](test/Functional.Core.UnitTests/OptionTests/README.md)
 
@@ -39,7 +50,7 @@ Some(9)
     .Be(false);
 ```
 
-## [One\<T1, T2\>](test/Functional.Core.UnitTests/OneTests/README.md)
+## [One\<T, Tn\>](test/Functional.Core.UnitTests/OneTests/README.md)
 
 _(A C# version of a Discriminated Union.)_
 
