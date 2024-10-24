@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>nullable</WarningsAsErrors>
+        <RootNamespace>Fishnet.Core</RootNamespace>
+        <LangVersion>default</LangVersion>
+        <AssemblyName>Fishnet.Core</AssemblyName>
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+        <CompilerGeneratedFilesOutputPath>OneOf</CompilerGeneratedFilesOutputPath>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <Authors>Matt Cotton</Authors>
+        <Copyright>Matt Cotton</Copyright>
+        <PackageId>Fishnet</PackageId>
+        <Title>Fishnet - A stocking filler of FP.</Title>
+        <Description>FP style types for C# (Option, DU, Try/Result, Either)</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Fishnet.SourceGen\Fishnet.SourceGen.csproj" ReferenceOutputAssembly="false"
+                        OutputItemType="Analyzer"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="$(CompilerGeneratedFilesOutputPath)/**/*.g.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="OneOf\Fishnet.SourceGen\Fishnet.SourceGen.OneTypeGenerator\" />
+    </ItemGroup>
+
+</Project>

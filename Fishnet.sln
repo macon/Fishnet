@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5E3B4665-9789-4B5B-BD7D-4A08AE11F7D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2B3A64A4-30A4-4194-A181-8DE70A054ED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fishnet.Core", "src\Fishnet.Core\Fishnet.Core.csproj", "{57535429-1210-4C2A-9A25-8C5E38BFB93B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{45C0AD61-087D-4EDE-9176-F311934B3910}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fishnet.Core.UnitTests", "test\Fishnet.Core.UnitTests\Fishnet.Core.UnitTests.csproj", "{AF52F228-82A1-4687-AC41-64076EB15FB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fishnet.SourceGen", "src\Fishnet.SourceGen\Fishnet.SourceGen.csproj", "{A7BA7EF7-A41D-4805-B4B9-47F09B63588A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fishnet.SourceGen.UnitTests", "test\Fishnet.SourceGen.UnitTests\Fishnet.SourceGen.UnitTests.csproj", "{AD92CB28-C4E9-4A7B-9E34-BB9D6604A0CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57535429-1210-4C2A-9A25-8C5E38BFB93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57535429-1210-4C2A-9A25-8C5E38BFB93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57535429-1210-4C2A-9A25-8C5E38BFB93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57535429-1210-4C2A-9A25-8C5E38BFB93B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF52F228-82A1-4687-AC41-64076EB15FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF52F228-82A1-4687-AC41-64076EB15FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF52F228-82A1-4687-AC41-64076EB15FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF52F228-82A1-4687-AC41-64076EB15FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7BA7EF7-A41D-4805-B4B9-47F09B63588A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7BA7EF7-A41D-4805-B4B9-47F09B63588A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7BA7EF7-A41D-4805-B4B9-47F09B63588A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7BA7EF7-A41D-4805-B4B9-47F09B63588A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD92CB28-C4E9-4A7B-9E34-BB9D6604A0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD92CB28-C4E9-4A7B-9E34-BB9D6604A0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD92CB28-C4E9-4A7B-9E34-BB9D6604A0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD92CB28-C4E9-4A7B-9E34-BB9D6604A0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{57535429-1210-4C2A-9A25-8C5E38BFB93B} = {5E3B4665-9789-4B5B-BD7D-4A08AE11F7D2}
+		{AF52F228-82A1-4687-AC41-64076EB15FB6} = {2B3A64A4-30A4-4194-A181-8DE70A054ED9}
+		{A7BA7EF7-A41D-4805-B4B9-47F09B63588A} = {5E3B4665-9789-4B5B-BD7D-4A08AE11F7D2}
+		{AD92CB28-C4E9-4A7B-9E34-BB9D6604A0CE} = {2B3A64A4-30A4-4194-A181-8DE70A054ED9}
+	EndGlobalSection
+EndGlobal
