@@ -21,7 +21,7 @@ public class CurryTests
      * becomes:
      * 
      * Func<IDatabaseProvider, Payment, bool> savePayment = (db, p) => db.Store(p);
-     * var SavePaymentPg = SavePayment.Curry()(new PostgresDb());
+     * var SavePaymentPg = savePayment.Curry()(new PostgresDb());
      * var result = SavePaymentPg(new Payment(100));
      */
 
